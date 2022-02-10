@@ -2,8 +2,8 @@ body {
   background-color: #1c1a19;
   color: #fff;
   font-size: 25px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .status div {
-  margin: 16px 0px 24px 21px;
+  margin: 16px 0 24px 21px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -34,13 +34,13 @@ body {
 }
 
 .status img {
-  margin: 17.33px 14.67px 34.33px 0px;
+  margin: 17.33px 14.67px 34.33px 0;
   width: 66.66px;
   height: 11.34px;
 }
 
 .menu div {
-  margin: 0px 222px 12px 24px;
+  margin: 0 222px 12px 24px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -51,7 +51,7 @@ body {
 }
 
 .menu img {
-  margin: 0px 35px 18px 0px;
+  margin: 0 35px 18px 0px;
   width: 18px;
   height: 12px;
 }
