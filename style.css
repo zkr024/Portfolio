@@ -1,6 +1,5 @@
 body {
-  background-color: #1c1a19;
-  color: #fff;
+  color: #ffffff;
   font-size: 25px;
   padding: 0;
   margin: 0;
@@ -66,42 +65,43 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
   width: 375px;
+  height: 100vh;
+  background-color: #1c1a19;
 }
 
 .title {
-  font-family: Crete Round;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
   margin: 120px 24px 0 24px;
   width: 327px;
   height: 124px;
 }
 
 .profession {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
-  color: #FFF5E1;
+  color: #fff5e1;
   width: 327px;
   height: 27px;
   margin: 12px 24px 0 24px;
 }
 
 .headline p {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 12px 24px 0 24px;
 }
 
@@ -110,3 +110,23 @@ body {
   height: 40px;
   margin: 12px 151px 0 24px;
 }
+
+.container {
+  position: absolute;
+}
+
+.image {
+  position: absolute;
+  left: 64.7%;
+  top: 410px;
+  bottom: -11.63%;
+}
+
+
+
+
+
+
+
+
+
