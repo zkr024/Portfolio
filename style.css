@@ -1,5 +1,5 @@
 body {
-  color: #ffffff;
+  color: #fff;
   font-size: 25px;
   padding: 0;
   margin: 0;
@@ -101,7 +101,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   margin: 12px 24px 0 24px;
 }
 
@@ -121,12 +121,3 @@ body {
   top: 410px;
   bottom: -11.63%;
 }
-
-
-
-
-
-
-
-
-
