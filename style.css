@@ -1,3 +1,57 @@
-.title {
-  color: blue;
+
+body {
+  background-color: #1C1A19;
+  color: #fff;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
 }
+
+.top {
+  background-color: #3C3A39;
+  width: 375px;
+  height: 92px;
+}
+
+.status, .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status div {
+  margin: 16px 0 24px 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  width: 54px;
+  height: 16px;
+}
+
+.status img {
+  margin: 17.33px 14.67px 34.33px 0;
+  width: 66.66px;
+  height: 11.34px;
+}
+
+.menu div {
+  margin: 0px 222px 12px 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  width: 77px;
+  height: 24px;  
+}
+
+.menu img {
+  margin: 0px 35px 18px 0px;
+  width: 18px;
+  height: 12px;
+}
+
