@@ -1,6 +1,5 @@
-
 body {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   color: #fff;
   font-size: 25px;
   padding: 0;
@@ -8,12 +7,13 @@ body {
 }
 
 .top {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   width: 375px;
   height: 92px;
 }
 
-.status, .menu {
+.status, 
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
