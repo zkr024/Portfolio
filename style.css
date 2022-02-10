@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   color: #fff;
   font-size: 25px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .top {
@@ -105,10 +108,20 @@ body {
   margin: 12px 24px 0 24px;
 }
 
-.headline img {
+.media {
+  list-style: none;
+  display: flex;
   width: 200px;
   height: 40px;
-  margin: 12px 151px 0 24px;
+  margin: 12px 0 151px 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.media li {
+  width: 20px;
+  height: 20px;  
 }
 
 .container {
