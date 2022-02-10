@@ -28,7 +28,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: -0.28;
+  letter-spacing: -0.28px;
   width: 54px;
   height: 16px;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .menu img {
-  margin: 0 35px 18px 0px;
+  margin: 0 35px 18px 0;
   width: 18px;
   height: 12px;
 }
