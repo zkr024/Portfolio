@@ -11,6 +11,13 @@ body {
   background-color: #3c3a39;
   width: 375px;
   height: 92px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  height: 56px;
 }
 
 .status,
@@ -40,13 +47,13 @@ body {
 }
 
 .menu div {
-  margin: 0 222px 12px 24px;
+  margin: 0 0 12px 24px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  width: 77px;
+  width: 140px;
   height: 24px;
 }
 
