@@ -12,7 +12,7 @@ body {
   height: 92px;
 }
 
-.status, 
+.status,
 .menu {
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@ body {
 
 .status div {
   margin: 16px 0 24px 21px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -40,13 +40,13 @@ body {
 
 .menu div {
   margin: 0px 222px 12px 24px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   width: 77px;
-  height: 24px;  
+  height: 24px;
 }
 
 .menu img {
@@ -54,4 +54,3 @@ body {
   width: 18px;
   height: 12px;
 }
-
