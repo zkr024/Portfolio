@@ -1,4 +1,8 @@
-# Portfolio
+# Oscar - Portfolio
+
+Mobile view of the 2nd Figma template.
+- Used Flexbox for the header and the 1st page.
+- Combile Grid and Flexbox to build the work area.
 
 ## Built With:
 
@@ -32,3 +36,4 @@ Give a ⭐️ if you like this project!
 - etc
 
 ## 📝 License
+This project is [MIT](./MIT.md) licensed.
