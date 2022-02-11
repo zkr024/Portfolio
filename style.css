@@ -7,7 +7,8 @@
 .container {
   color: #fff;
   font-size: 25px;
-  position: relative;
+  width: 375px;
+  background: #1c1a19 url(images/Group.png) 100% 110% no-repeat;
 }
 
 .top {
@@ -39,7 +40,6 @@
   flex-direction: column;
   width: 375px;
   height: 590px;
-  background-color: #1c1a19;
 }
 
 .title {
@@ -263,7 +263,7 @@
   display: flex;
   flex-direction: column;
   width: 375px;
-  background-color: #1c1a19;
+  background: #1c1a19 url(images/imgback.png) 100% 20% no-repeat;
   margin-top: 120px;
 }
 
@@ -321,9 +321,41 @@
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 257px;
+  width: 327px;
+}
+
+.one img {
+  margin: 0 12px 0 62.77px;
+}
+
+.one h3 {
+  width: 164px;
+  margin-right: 62.77px;
+  text-align: start;
+  padding-left: 5px;
+}
+
+.two img {
+  margin: 0 12px 0 44px;
+}
+
+.two h3 {
+  width: 227px;
+  text-align: start;
+  margin-right: 35px;
+  padding-left: 15px;
+}
+
+.three img {
+  margin: 0 12px 0 105px;
+}
+
+.three h3 {
+  width: 115px;
+  text-align: start;
+  margin-right: 91px;
 }
 
 .abilities li {
@@ -340,24 +372,14 @@
   margin-right: 12px;
 }
 
-.containerTwo {
-  position: relative;
-}
-
-.image_background {
-  position: absolute;
-  top: 380px;
-  left: 214.5px;
-}
-
-.access_button :hover {
+.access_button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
   color: #f55800;
 }
 
-.access_button :active {
+.access_button:active {
   background: #e05304;
   color: #f4f1f0;
 }
