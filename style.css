@@ -99,7 +99,7 @@
   top: 365px;
 }
 
-.work{
+.work {
   display: grid;
   width: 375px;
   grid-gap: 24px;
@@ -200,7 +200,7 @@
 .second_card {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/background.png");
   width: 327px;
   margin: 0 24px;
@@ -315,7 +315,7 @@
 
 .abilities_title {
   display: flex;
-  font-family: InaiMathi;
+  font-family: InaiMathi, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -340,7 +340,7 @@
   margin-right: 12px;
 }
 
-.containerTwo{
+.containerTwo {
   position: relative;
 }
 
