@@ -103,7 +103,7 @@
   display: grid;
   width: 375px;
   grid-gap: 24px;
-  grid-template-rows: 875px repeat(6,386px);
+  grid-template-rows: 875px repeat(6, 386px);
 }
 
 .first_card {
@@ -336,7 +336,7 @@
   margin-top: 32px;
 }
 
-.abilities img {
+.abilities_title img {
   margin-right: 12px;
 }
 
@@ -350,15 +350,14 @@
   left: 214.5px;
 }
 
-.access_button:hover {
-  background: #fff5E1;
+.access_button :hover {
+  background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
   color: #f55800;
 }
 
-.access_button:active {
+.access_button :active {
   background: #e05304;
   color: #f4f1f0;
 }
-
