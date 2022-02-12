@@ -4,9 +4,11 @@
   margin: 0;
 }
 
-body {
+.container {
   color: #fff;
   font-size: 25px;
+  width: 375px;
+  background: #1c1a19 url(images/Group.png) 100% 110% no-repeat;
 }
 
 .top {
@@ -14,6 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #3c3a39;
+  width: 375px;
 }
 
 .top div {
@@ -36,8 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 375px;
-  height: 100vh;
-  background-color: #1c1a19;
+  height: 590px;
 }
 
 .title {
@@ -68,7 +70,7 @@ body {
 .headline p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -91,13 +93,293 @@ body {
   height: 20px;
 }
 
-.container {
-  position: absolute;
-}
-
 .image {
   position: absolute;
-  left: 64.7%;
-  top: 410px;
-  bottom: -11.63%;
+  left: 242.5px;
+  top: 365px;
+}
+
+.work {
+  display: grid;
+  width: 375px;
+  grid-gap: 24px;
+  grid-template-rows: 875px repeat(6, 386px);
+}
+
+.first_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first_card h2 {
+  width: 327px;
+  height: 107px;
+  margin: 120px 24px 80px 24px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  border-bottom: 1px solid #212121;
+}
+
+.first_card img {
+  width: 327px;
+  height: 237px;
+  margin: 0 24px 24px 24px;
+}
+
+.first_card h3 {
+  width: 327px;
+  height: 36px;
+  margin: 0 24px 12px 24px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.first_card p {
+  width: 327px;
+  height: 147px;
+  margin: 0 24px 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.languages {
+  display: flex;
+  list-style: none;
+  height: 40px;
+  width: 297px;
+  margin: 0 54px 12px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languages li {
+  background: #fff;
+  padding: 12px 10px;
+  border: 1px solid #8993a4;
+}
+
+.languages a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.access_button {
+  width: 124px;
+  height: 48px;
+  margin: 0 227px 0 24px;
+  padding: 12px;
+  background: #ff6b00;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.second_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/background.png");
+  width: 327px;
+  margin: 0 24px;
+}
+
+.second_card h3 {
+  width: 295px;
+  height: 81px;
+  margin: 84px 16px 0 16px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.second_card p {
+  width: 295px;
+  height: 87px;
+  margin: 12px 16px 0 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.second_card .languages {
+  margin: 12px 75px 0 16px;
+  width: 236px;
+}
+
+.second_card li {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+.second_card a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.second_card .access_button {
+  width: 100%;
+  margin: 22px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background: #1c1a19 url(images/imgback.png) 100% 20% no-repeat;
+  margin-top: 120px;
+}
+
+.about .title {
+  height: 79px;
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.about p {
+  width: 327px;
+  height: 148px;
+  margin: 24px 24px 0 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.about .access_button {
+  width: 161px;
+  height: 48px;
+  margin: 24px 190px 0 24px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 327px;
+  padding-top: 86px;
+  border-top: 1px solid #fff;
+  margin: 209px 24px 130px 24px;
+}
+
+@font-face {
+  font-family: InaiMathi;
+  src: url(fonts/Murasuit.ttf);
+}
+
+.abilities {
+  color: #fff;
+  margin-top: 44px;
+  list-style: none;
+}
+
+.abilities_title {
+  display: flex;
+  font-family: InaiMathi, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 327px;
+}
+
+.one img {
+  margin: 0 12px 0 62.77px;
+}
+
+.one h3 {
+  width: 164px;
+  margin-right: 62.77px;
+  text-align: start;
+  padding-left: 5px;
+}
+
+.two img {
+  margin: 0 12px 0 44px;
+}
+
+.two h3 {
+  width: 227px;
+  text-align: start;
+  margin-right: 35px;
+  padding-left: 15px;
+}
+
+.three img {
+  margin: 0 12px 0 105px;
+}
+
+.three h3 {
+  width: 115px;
+  text-align: start;
+  margin-right: 91px;
+}
+
+.abilities li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.abilities_title img {
+  margin-right: 12px;
+}
+
+.access_button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+  color: #f55800;
+}
+
+.access_button:active {
+  background: #e05304;
+  color: #f4f1f0;
 }
