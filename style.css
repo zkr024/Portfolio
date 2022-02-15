@@ -178,6 +178,17 @@ body {
   background: #fff;
 }
 
+.second_card li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
 .languages a:hover {
   border: 1px solid #ff6b00;
   color: #ff6b00;
@@ -199,6 +210,12 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+}
+
+.submit {
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 124px;
 }
 
 .access_button:hover,
@@ -251,17 +268,6 @@ body {
 .second_card .languages {
   margin: 12px 75px 0 16px;
   width: 236px;
-}
-
-.second_card li a {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.24);
-  border: none;
 }
 
 .second_card .access_button {
@@ -392,6 +398,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .form h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -443,12 +450,6 @@ textarea::placeholder {
 textarea:focus,
 input:focus {
   outline: none;
-}
-
-.submit {
-  margin: auto;
-  margin-top: 24px;
-  margin-bottom: 124px;
 }
 
 .bottom {
