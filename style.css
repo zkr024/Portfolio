@@ -195,6 +195,11 @@ body {
   font-weight: bold;
 }
 
+.languages a:active {
+  background-color: #ecbfa4;
+  color: #fff;
+}
+
 .access_button,
 .submit {
   width: 124px;
