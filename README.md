@@ -11,7 +11,7 @@ Mobile view of the 2nd Figma template.
 
 ## Live Demo
 
-[Live Demo Link](https://zkr024.github.io/Portfolio/)
+[Live Demo](https://zkr024.github.io/Portfolio/)
 
 ## Getting Started
 
