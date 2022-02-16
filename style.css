@@ -769,10 +769,9 @@ input:focus {
   }
 
   .desktop-form {
-    display: block;
     flex-basis: 684px;
     display: grid;
-    grid-template: repeat(5,auto)/auto;
+    grid-template: repeat(5, auto)/auto;
     margin-top: 130px;
   }
 
