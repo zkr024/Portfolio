@@ -170,12 +170,21 @@
         </section> 
         <section class="form">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form action="https://formspree.io/f/xgedkodo" method="post">
+            <form class="mobile-form" action="https://formspree.io/f/xgedkodo" method="post">
                 <input type="text" maxlength="30" required="" placeholder="Full name" name="name">
                 <input type="email" required="" placeholder="Email address" name="email">
                 <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea"></textarea>
                 <input type="submit" value="Get in touch" class="submit">
             </form>
+            <form class="desktop-form" action="https://formspree.io/f/xgedkodo" method="post">
+                <input type="text" maxlength="30" required="" placeholder="First Name" name="fname" class="first-name">
+                <input type="text" maxlength="30" required="" placeholder="Last Name" name="lname" class="last-name">
+                <input type="email" required="" placeholder="Email address" name="email" class="email">
+                <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea"></textarea>
+                <input type="submit" value="Get in touch" class="submit">                
+            </form>
+        </section>
+        <section class="footer">
             <div class="bottom">
                 <ul class="media">
                     <li><a href="#"><img src="images/darkgithub.svg" alt="github icon taken from figma"></a></li>
