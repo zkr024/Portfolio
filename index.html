@@ -18,15 +18,23 @@
         <header>
             <nav class="top">
                 <div>Oscar</div>
-                <a href="#"><img src="images/bar.svg" alt="menu bar Icon taken from the figma template"></a>
+                <a href="#"><img class="menu" src="images/bar.svg" alt="menu bar Icon taken from the figma template"></a>
+                <ul class="nav">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><img src="images/Union.svg" alt="Envelope icon takem from Figma"></a></li>
+                </ul>
             </nav>
         </header>
         <div class="headline">
-            <h1 class="title">Hey There. I'm Oscar</h1>
-            <h2 class="profession">I’am a Software Developer</h2>
-            <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+            <div class="presentation">
+                <h1 class="title">Hey There. I'm Oscar</h1>
+                <h2 class="profession">I’am a Software Developer</h2>
+                <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.</p>
-            <ul class="media">
+            </div>
+            <ul class="media front">
                 <li><a href="#"><img src="images/github.svg" alt="github icon taken from figma"></a></li>
                 <li><a href="#"><img src="images/in.svg" alt="icon taken from figma"></a></li>
                 <li><a href="#"><img src="images/ok.svg" alt="icon taken from figma"></a></li>
@@ -39,18 +47,24 @@
         <section class="work">
             <div class="first_card">
                 <h2>My Recent Works</h2>
-                <img src="images/gym.png" alt="Gym image taken from figma">
-                <h3>Multi-Post Stories</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer   took a standard dummy text.</p>
-                <ul class="languages">
-                    <li><a href="#">CSS</a>
-                    <li><a href="#">html</a>
-                    <li><a href="#">bootstrap</a>
-                    <li><a href="#">Ruby</a>
-                </ul>
-                <a class="access_button" href="#">See Project</a>
+                <div class="card_content">
+                    <div class="image">
+                        <img src="images/gym2.png" alt="Gym image taken from figma">
+                    </div>
+                    <div class="information">
+                        <h3>Multi-Post Stories</h3>
+                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer   took a standard dummy text.</p>
+                        <ul class="languages">
+                            <li><a href="#">CSS</a>
+                            <li><a href="#">html</a>
+                            <li><a href="#">bootstrap</a>
+                            <li><a href="#">Ruby</a>
+                        </ul>
+                        <a class="access_button" href="#">See Project</a>
+                    </div>
+                </div>
             </div>
-            <div class="second_card">
+            <div class="second_card first">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                 <ul class="languages">
@@ -60,7 +74,29 @@
                 </ul>
                 <a class="access_button" href="#">See Project</a>
             </div>
-            <div class="second_card">
+            <div class="second_card second">
+                <h3>Profesional Art Printing Data</h3>
+                <h4>Data Dashboard Healthcare</h4>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="languages">
+                    <li><a href="#">html</a>
+                    <li><a href="#">bootstrap</a>
+                    <li><a href="#">Ruby</a>
+                </ul>
+                <a class="access_button" href="#">See Project</a>
+            </div>
+            <div class="second_card third">
+                <h3>Profesional Art Printing Data</h3>
+                <h4>Website Protfolio</h4>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <ul class="languages">
+                    <li><a href="#">html</a>
+                    <li><a href="#">bootstrap</a>
+                    <li><a href="#">Ruby</a>
+                </ul>
+                <a class="access_button" href="#">See Project</a>
+            </div>
+            <div class="second_card fourth">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                 <ul class="languages">
@@ -70,8 +106,9 @@
                 </ul>
                 <a class="access_button" href="#">See Project</a>
             </div>
-            <div class="second_card">
+            <div class="second_card fifth">
                 <h3>Profesional Art Printing Data</h3>
+                <h4>Data Dashboard Healthcare</h4>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                 <ul class="languages">
                     <li><a href="#">html</a>
@@ -80,28 +117,9 @@
                 </ul>
                 <a class="access_button" href="#">See Project</a>
             </div>
-            <div class="second_card">
+            <div class="second_card sixth">
                 <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                <ul class="languages">
-                    <li><a href="#">html</a>
-                    <li><a href="#">bootstrap</a>
-                    <li><a href="#">Ruby</a>
-                </ul>
-                <a class="access_button" href="#">See Project</a>
-            </div>
-            <div class="second_card">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                <ul class="languages">
-                    <li><a href="#">html</a>
-                    <li><a href="#">bootstrap</a>
-                    <li><a href="#">Ruby</a>
-                </ul>
-                <a class="access_button" href="#">See Project</a>
-            </div>
-            <div class="second_card">
-                <h3>Profesional Art Printing Data</h3>
+                <h4>Website Protfolio</h4>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                 <ul class="languages">
                     <li><a href="#">html</a>
@@ -152,12 +170,21 @@
         </section> 
         <section class="form">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form action="https://formspree.io/f/xgedkodo" method="post">
+            <form class="mobile-form" action="https://formspree.io/f/xgedkodo" method="post">
                 <input type="text" maxlength="30" required="" placeholder="Full name" name="name">
                 <input type="email" required="" placeholder="Email address" name="email">
                 <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea"></textarea>
                 <input type="submit" value="Get in touch" class="submit">
             </form>
+            <form class="desktop-form" action="https://formspree.io/f/xgedkodo" method="post">
+                <input type="text" maxlength="30" required="" placeholder="First Name" name="fname" class="first-name">
+                <input type="text" maxlength="30" required="" placeholder="Last Name" name="lname" class="last-name">
+                <input type="email" required="" placeholder="Email address" name="email" class="email">
+                <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea"></textarea>
+                <input type="submit" value="Get in touch" class="submit">                
+            </form>
+        </section>
+        <section class="footer">
             <div class="bottom">
                 <ul class="media">
                     <li><a href="#"><img src="images/darkgithub.svg" alt="github icon taken from figma"></a></li>
