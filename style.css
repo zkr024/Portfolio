@@ -49,7 +49,7 @@
     display: none;
   }
 
-  .nav  {
+  .nav {
     display: flex;
     list-style: none;
     align-items: center;
@@ -469,7 +469,7 @@
     background: url("images/secondback.png");
   }
 
-  .second_card h4{
+  .second_card h4 {
     display: block;
     font-family: 'Crete Round', serif;
     font-style: normal;
