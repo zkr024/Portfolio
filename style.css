@@ -345,7 +345,7 @@
   .card_content {
     flex-direction: row;
     justify-content: start;
-    border-top: 1px solid #212121;    
+    border-top: 1px solid #212121;
   }
 
   .card_content .image {
@@ -635,8 +635,8 @@
   margin-right: 12px;
 }
 
-@media (min-width: 760px){
-  .about{
+@media (min-width: 760px) {
+  .about {
     background: #1c1a19 url(images/imgback.png) 100% 15% no-repeat;
   }
 
@@ -667,7 +667,7 @@
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .about {
     background: #1c1a19 url(images/bigimgback.png) 100% 5% no-repeat;
   }
@@ -746,20 +746,16 @@ input:focus {
   margin: 0;
 }
 
-@media (min-width: 780px){
+@media (min-width: 780px) {
   .form {
-    flex-direction: row; 
+    flex-direction: row;
     height: auto;
     margin: 0;
     justify-content: center;
   }
-  
-  .mobile-form{
-    display: none;
-  }
 
-  .desktop-form{
-    display: block;
+  .mobile-form {
+    display: none;
   }
 
   .form h2 {
@@ -773,20 +769,21 @@ input:focus {
   }
 
   .desktop-form {
+    display: block;
     flex-basis: 684px;
     display: grid;
     grid-template: repeat(5,auto)/auto;
     margin-top: 130px;
   }
 
-  .submit{
+  .submit {
     margin: 24px 0 124px 0;
   }
 }
 
-@media (min-width: 950px){
+@media (min-width: 950px) {
   .desktop-form {
-    grid-template: repeat(4,auto)/auto auto;
+    grid-template: repeat(4, auto)/auto auto;
     gap: 24px;
     margin-right: 24px;
   }
