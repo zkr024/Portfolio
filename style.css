@@ -8,6 +8,8 @@
   color: #fff;
   font-size: 25px;
   background: #1c1a19 url(images/Group.png) 100% 114% no-repeat;
+  transition-property: background;
+  transition-duration: 800ms;
 }
 
 @media (min-width: 1205px) {
@@ -36,6 +38,28 @@
   font-size: 18px;
   line-height: 24px;
   height: 24px;
+}
+
+.logo {
+  animation: oscar;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes oscar {
+  from {
+    top: -60px;
+  }
+
+  50% {
+    top: 11px;
+    transform: rotate(90deg);
+  }
+
+  to {
+    top: 0;
+  } 
 }
 
 .menu {
@@ -89,12 +113,6 @@
   height: 124px;
 }
 
-.title:hover {
-  transition-delay: (1.1s);
-  transition-duration: 1s;
-  transform: translate (10px, 0);
-}
-
 .profession {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -133,6 +151,27 @@
 .media img {
   width: 20px;
   height: 20px;
+}
+
+.front img {
+  animation-name: icon;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
+@keyframes icon {
+  from {
+    left: -90px;
+  }
+
+  50% {
+    left: 40px;
+  }
+
+  to {
+    left: 0;
+  }
 }
 
 @media (min-width: 760px) {
@@ -176,7 +215,7 @@
     height: auto;
     width: auto;
     padding: 0;
-    margin: 279px 89px 0 36px;
+    margin: 192px 89px 0 36px;
   }
 
   .front li {
@@ -219,8 +258,8 @@
 }
 
 .image:hover {
-  transform:scale(1.05);
-  transition-duration: 0.5s;
+  transform:scale(1.01);
+  transition-duration: 250ms;
 }
 
 .image img {
@@ -318,6 +357,7 @@
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  transition: color,background 400ms ease-in;
 }
 
 .submit {
@@ -393,7 +433,12 @@
   flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/background.png");
-  margin: 0 24px;
+  margin: 0 24px; 
+}
+
+.second_card:hover {
+  transform: scale(1.03);
+  transition-duration: 250ms;
 }
 
 .second_card h4 {
@@ -536,8 +581,10 @@
 .about {
   display: flex;
   flex-direction: column;
-  background: #1c1a19 url(images/imgback.png) 100% 20% no-repeat;
   margin-top: 120px;
+  background: #1c1a19 url(images/imgback.png) 100% 20% no-repeat;
+  transition-property: background;
+  transition-duration: 800ms;
 }
 
 .about .title {
@@ -687,6 +734,11 @@
 .form {
   display: flex;
   flex-direction: column;
+}
+
+input:hover {
+    transition-duration: 250ms;
+    transform: translate(5px, 0);
 }
 
 .desktop-form {
