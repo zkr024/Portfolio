@@ -89,6 +89,12 @@
   height: 124px;
 }
 
+.title:hover {
+  transition-delay: (1.1s);
+  transition-duration: 1s;
+  transform: translate (10px, 0);
+}
+
 .profession {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -210,6 +216,11 @@
   min-height: 237px;
   max-height: 448px;
   margin: 80px 24px 24px 24px;
+}
+
+.image:hover {
+  transform:scale(1.05);
+  transition-duration: 0.5s;
 }
 
 .image img {
