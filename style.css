@@ -167,6 +167,7 @@
 
   50% {
     left: 40px;
+    transform: rotate(360deg);
   }
 
   to {
