@@ -8,6 +8,8 @@
   color: #fff;
   font-size: 25px;
   background: #1c1a19 url(images/Group.png) 100% 114% no-repeat;
+  transition-property: background;
+  transition-duration: 800ms;
 }
 
 @media (min-width: 1205px) {
@@ -36,6 +38,28 @@
   font-size: 18px;
   line-height: 24px;
   height: 24px;
+}
+
+.logo {
+  animation: oscar;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes oscar {
+  from {
+    top: -60px;
+  }
+
+  50% {
+    top: 11px;
+    transform: rotate(90deg);
+  }
+
+  to {
+    top: 0;
+  }
 }
 
 .menu {
@@ -129,6 +153,28 @@
   height: 20px;
 }
 
+.front img {
+  animation-name: icon;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
+@keyframes icon {
+  from {
+    left: -90px;
+  }
+
+  50% {
+    left: 40px;
+    transform: rotate(360deg);
+  }
+
+  to {
+    left: 0;
+  }
+}
+
 @media (min-width: 760px) {
   .headline {
     flex-direction: row;
@@ -170,7 +216,7 @@
     height: auto;
     width: auto;
     padding: 0;
-    margin: 279px 89px 0 36px;
+    margin: 192px 89px 0 36px;
   }
 
   .front li {
@@ -210,6 +256,11 @@
   min-height: 237px;
   max-height: 448px;
   margin: 80px 24px 24px 24px;
+}
+
+.image:hover {
+  transform: scale(1.01);
+  transition-duration: 250ms;
 }
 
 .image img {
@@ -307,6 +358,7 @@
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  transition: color, background 400ms ease-in;
 }
 
 .submit {
@@ -383,6 +435,11 @@
   justify-content: space-between;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/background.png");
   margin: 0 24px;
+}
+
+.second_card:hover {
+  transform: scale(1.03);
+  transition-duration: 250ms;
 }
 
 .second_card h4 {
@@ -525,8 +582,10 @@
 .about {
   display: flex;
   flex-direction: column;
-  background: #1c1a19 url(images/imgback.png) 100% 20% no-repeat;
   margin-top: 120px;
+  background: #1c1a19 url(images/imgback.png) 100% 20% no-repeat;
+  transition-property: background;
+  transition-duration: 800ms;
 }
 
 .about .title {
@@ -711,6 +770,11 @@ input {
   line-height: 24px;
   padding: 14px 16px 14px 16px;
   margin-bottom: 24px;
+}
+
+input:hover {
+  transition-duration: 250ms;
+  transform: translate(5px, 0);
 }
 
 textarea {
