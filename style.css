@@ -38,6 +38,8 @@
   font-size: 18px;
   line-height: 24px;
   height: 24px;
+  transition-property: margin;
+  transition-duration: 500ms;
 }
 
 .logo {
@@ -176,6 +178,10 @@
 }
 
 @media (min-width: 760px) {
+  .top div {
+    margin-left: 192px;
+  }
+  
   .headline {
     flex-direction: row;
     align-items: flex-start;
