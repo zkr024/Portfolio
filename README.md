@@ -1,22 +1,30 @@
 # Oscar - Portfolio
 
-Mobile view of the 2nd Figma template.
+Responsive site from Mobile to desktop.
+2nd Figma template.
 - Used Flexbox for the header and the 1st page.
 - Combile Grid and Flexbox to build the work area.
+- Used media queries to make the site responsive.
+- Used animations a transitions to make the site more friendly to the user.
 
 ## Built With:
 
 - HTML.
 - CSS.
+- Check the code with Linters tests:
+  *Webhint*
+  *Stylelint*
+  *Lighthouse*
 
-## Live Demo
+## Live Demo - application deploy
 
 [Live Demo](https://zkr024.github.io/Portfolio/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
-You may clone the project and work on it locally from your terminal.
+- Go to the folder where you want to store the project, and clone the repository:
+- SSH: git@github.com:zkr024/Portfolio.git
 
 ## Authors
 
