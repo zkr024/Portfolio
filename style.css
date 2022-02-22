@@ -54,9 +54,14 @@
     top: -60px;
   }
 
-  50% {
+  33% {
     top: 11px;
     transform: rotate(90deg);
+  }
+
+  66% {
+    top: 0;
+    transform: rotate(-30deg);
   }
 
   to {
