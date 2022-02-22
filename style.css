@@ -778,11 +778,6 @@ input {
   margin-bottom: 24px;
 }
 
-input:hover {
-  transition-duration: 250ms;
-  transform: translate(5px, 0);
-}
-
 textarea {
   height: 114px;
   padding: 12px;
@@ -797,6 +792,12 @@ textarea {
 
 textarea::placeholder {
   color: #3c3a39;
+}
+
+textarea:hover,
+input:hover {
+  transition-duration: 250ms;
+  transform: translate(5px, 0);
 }
 
 textarea:focus,
