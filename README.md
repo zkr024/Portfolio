@@ -16,7 +16,7 @@ Responsive site from Mobile to desktop.
   *Stylelint*
   *Lighthouse*
 
-## Live Demo - application deploy
+## Live Demo
 
 [Live Demo](https://zkr024.github.io/Portfolio/)
 
