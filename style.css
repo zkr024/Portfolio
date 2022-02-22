@@ -360,7 +360,8 @@
   height: 48px;
   margin: 0 227px 0 24px;
   padding: 12px;
-  background: #ff6b00;
+  background: #823803;
+  outline: 1px solid #ff6b00;
   text-decoration: none;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -373,7 +374,6 @@
 }
 
 .submit {
-  background: #823803;
   margin: auto;
   margin-top: 24px;
   margin-bottom: 124px;
@@ -495,6 +495,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  outline: none;
 }
 
 @media (min-width: 774px) {
@@ -536,7 +537,7 @@
 
   .second,
   .fifth {
-    background: url("images/secondback.png");
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%) url("images/secondback.png");
   }
 
   .second_card h4 {
@@ -572,7 +573,7 @@
 
   .third,
   .sixth {
-    background: url("images/thirdback.png");
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%) url("images/thirdback.png");
   }
 
   .third h4,
@@ -742,6 +743,10 @@
   .about {
     background: #1c1a19 url(images/bigimgback.png) 100% 5% no-repeat;
   }
+}
+
+label {
+  display: none;
 }
 
 .form {
