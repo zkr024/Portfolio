@@ -69,6 +69,25 @@
   }
 }
 
+.burger_menu{
+  position: absolute;
+  background: #3c3a39;
+  top: 47px;
+  width: 100%;
+  padding: 25px;
+  list-style: none;
+}
+
+.burger_menu li {
+  padding: 15px 0;
+  border-bottom: 1px gray solid;
+}
+
+.burger_menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .menu {
   margin-right: 35px;
   width: 18px;
