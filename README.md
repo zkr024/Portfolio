@@ -6,11 +6,13 @@ Responsive site from Mobile to desktop.
 - Combile Grid and Flexbox to build the work area.
 - Used media queries to make the site responsive.
 - Used animations a transitions to make the site more friendly to the user.
+- Used JavaScript to enable/disable the mobile menu from the navbar
 
 ## Built With:
 
 - HTML.
 - CSS.
+- JavaScript
 - Check the code with Linters tests:
   *Webhint*
   *Stylelint*
