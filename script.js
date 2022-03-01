@@ -5,7 +5,7 @@ const closeMenuTwo = document.querySelector('.close_about');
 const closeMenuThree = document.querySelector('.close_contact');
 const burgerMenu = document.querySelector('.burger_menu');
 
-menu.addEventListener("click", () => {
+menu.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
