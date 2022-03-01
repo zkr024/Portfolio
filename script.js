@@ -24,3 +24,11 @@ closeMenuTwo.addEventListener('click', () => {
 closeMenuThree.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
+
+const allProjects = document.querySelector('.project')
+const sectionCards = {name:'multi-post Stories', 
+                      technologies: ['HTML', 'CSS', 'JavaScript'],
+                      image: './images/',
+                      description: 'Lorem',
+                      button: 'see live', 'see source';
+                     };
