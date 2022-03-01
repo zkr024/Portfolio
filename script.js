@@ -9,18 +9,18 @@ menu.addEventListener("click", () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
-closeButton.addEventListener("click", () => {
+closeButton.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
-closeMenu.addEventListener("click", () => {
+closeMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
-closeMenuTwo.addEventListener("click", () => {
+closeMenuTwo.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
-closeMenuThree.addEventListener("click", () => {
+closeMenuThree.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });

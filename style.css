@@ -358,17 +358,6 @@
   border: none;
 }
 
-.languages a:hover {
-  border: 1px solid #ff6b00;
-  color: #ff6b00;
-  font-weight: bold;
-}
-
-.languages a:active {
-  background-color: #ecbfa4;
-  color: #fff;
-}
-
 .burger_menu {
   position: fixed;
   background-color: #3c3a39;
@@ -394,6 +383,17 @@
   text-decoration: none;
   color: #fff;
   padding: 24px 0 15px 16px;
+}
+
+.languages a:hover {
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.languages a:active {
+  background-color: #ecbfa4;
+  color: #fff;
 }
 
 .burger_menu li a:hover {
