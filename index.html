@@ -20,10 +20,16 @@
                 <div class="logo">Oscar</div>
                 <a href="#"><img class="menu" src="images/bar.svg" alt="menu bar Icon taken from the figma template"></a>
                 <ul class="nav">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about_me">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#"><img src="images/Union.svg" alt="Envelope icon taken from Figma"></a></li>
+                </ul>
+                 <ul class="burger_menu">
+                    <li class="close_button"><a href="#"><img src="images/close.svg" alt="close icon"></a></li>
+                    <li><a href="#portfolio" class="close_port">Portfolio</a></li>
+                    <li><a href="#about_me" class="close_about">About</a></li>
+                    <li><a href="#contact" class="close_contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,7 +51,7 @@
     </div>
     <div>
         <section class="work">
-            <div class="first_card">
+            <div id="portfolio" class="first_card">
                 <h2>My Recent Works</h2>
                 <div class="card_content">
                     <div class="image">
@@ -129,7 +135,7 @@
                 <a class="access_button" href="#">See Project</a>
             </div>
         </section>
-        <section class="about">
+        <section id="about_me" class="about">
                 <h2 class="title">About me</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need    coded, don’t hestiate to contact me.</p>
                 <a class="access_button" href="#">Get My Resume</a>
@@ -168,7 +174,7 @@
                     </ul></li>
                 </ul>    
         </section> 
-        <section class="form">
+        <section id="contact" class="form">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <form class="mobile-form" action="https://formspree.io/f/xgedkodo" method="post">
                 <label for="name">Name</label>
@@ -203,5 +209,6 @@
             </div>
         </footer>   
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
