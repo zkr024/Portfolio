@@ -26,9 +26,18 @@ closeMenuThree.addEventListener('click', () => {
 });
 
 const allProjects = document.querySelector('.project')
-const sectionCards = {name:'multi-post Stories', 
+const sectionCards = {name:'multi-post Stories',
                       technologies: ['HTML', 'CSS', 'JavaScript'],
                       image: './images/',
                       description: 'Lorem',
-                      button: 'see live', 'see source';
+                      button: ['see live', 'see source']
                      };
+
+function createCard(projectName){
+  let blur = document.createElement('div');
+  blur.classList.add('blur');
+
+  document.body.appendChild(blur);
+}
+
+createCard(sectionCards)

@@ -875,6 +875,18 @@ input:focus {
   margin: 0;
 }
 
+/* POPUP WINDOW */
+.blur{
+  background: #66666666;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  display: block;
+}
+
 @media (min-width: 780px) {
   .form {
     flex-direction: row;
