@@ -1,26 +1,26 @@
-const menu = document.querySelector(".menu");
-const close_button = document.querySelector(".close_button");
-const close_menu = document.querySelector(".close_port");
-const close_menu_two = document.querySelector(".close_about");
-const close_menu_three = document.querySelector(".close_contact");
-const burger_menu = document.querySelector(".burger_menu");
+const menu = document.querySelector('.menu');
+const closeButton = document.querySelector('.close_button');
+const closeMenu = document.querySelector('.close_port');
+const closeMenuTwo = document.querySelector('.close_about');
+const closeMenuThree = document.querySelector('.close_contact');
+const burgerMenu = document.querySelector('.burger_menu');
 
 menu.addEventListener("click", () => {
-    burger_menu.classList.toggle("menu_active");    
-})
+  burgerMenu.classList.toggle('menu_active');
+});
 
-close_button.addEventListener("click", () => {
-    burger_menu.classList.toggle("menu_active");    
-})
+closeButton.addEventListener("click", () => {
+  burgerMenu.classList.toggle('menu_active');
+});
 
-close_menu.addEventListener("click", () => {
-    burger_menu.classList.toggle("menu_active");    
-})
+closeMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle('menu_active');
+});
 
-close_menu_two.addEventListener("click", () => {
-    burger_menu.classList.toggle("menu_active");    
-})
+closeMenuTwo.addEventListener("click", () => {
+  burgerMenu.classList.toggle('menu_active');
+});
 
-close_menu_three.addEventListener("click", () => {
-    burger_menu.classList.toggle("menu_active");    
-})
+closeMenuThree.addEventListener("click", () => {
+  burgerMenu.classList.toggle('menu_active');
+});
