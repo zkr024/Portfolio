@@ -17,6 +17,7 @@ Responsive site from Mobile to desktop.
   *Webhint*
   *Stylelint*
   *Lighthouse*
+  *esLint*
 
 ## Live Demo
 
