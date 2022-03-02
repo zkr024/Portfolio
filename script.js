@@ -26,7 +26,8 @@ closeMenuThree.addEventListener('click', () => {
 });
 
 const cardOne = {
-  name: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
+  name: 'Multi Post Stories',
+  nameTwo: 'Keeping track of hundreds  of components website',
   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
   image: 'images/SnapshootPortfolio.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -37,7 +38,7 @@ const cardOne = {
 function createPopup(cardnumber) {
   // use the documentFragment method for the lists //
   const fragment = document.createDocumentFragment();
-  // 1st part: adding classes and content //  
+  // 1st part: adding classes and content //
   // Container to keep all the tags for the popup window //
   const container = document.createElement('section');
   container.classList.toggle('popup_container');
@@ -47,9 +48,9 @@ function createPopup(cardnumber) {
   const popupDesk = document.createElement('div');
   popupDesk.classList.toggle('popup_desktop');
   const title = document.createElement('h2');
-  title.textContent = cardnumber.name[0];
+  title.textContent = cardnumber.name;
   const titledesk = document.createElement('h3');
-  titledesk.textContent = cardnumber.name[1];
+  titledesk.textContent = cardnumber.nameTwo;
   // Close icon //
   const link = document.createElement('a');
   link.classList.add('closePopup');
