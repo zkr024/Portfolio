@@ -25,84 +25,84 @@ closeMenuThree.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
-const cardOne = { 
+const cardOne = {
   name: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
   image: 'images/SnapshootPortfolio.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   liveVersion: 'see live',
-  source: 'see source'
+  source: 'see source',
 };
 
 function createPopup(cardnumber) {
-  //use the documentFragment method for the lists//
+  //use the documentFragment method for the lists// 
   const fragment = document.createDocumentFragment();
-  //1st part: adding classes and content//
-  //Container to keep all the tags for the popup window//
+  //1st part: adding classes and content//  
+  //Container to keep all the tags for the popup window// 
   const container = document.createElement('section');
   container.classList.toggle('popup_container');
   const popup = document.createElement('div');
   popup.classList.toggle('popup');
-  //Title for the desktop & Mobile version//
+  //Title for the desktop & Mobile version//  
   const popupDesk = document.createElement('div');
   popupDesk.classList.toggle('popup_desktop');
   const title = document.createElement('h2');
   title.textContent = cardnumber.name[0];
-  const titledesk = document.createElement('h3'); 
+  const titledesk = document.createElement('h3');
   titledesk.textContent = cardnumber.name[1];
-  //Close icon//
-  let link = document.createElement('a');
+  //Close icon//  
+  const link = document.createElement('a');
   link.classList.add('closePopup');
-  link.setAttribute('href','#');
-  let imgPopup = document.createElement('img');
-  imgPopup.setAttribute('src','images/cancel.svg');
-  imgPopup.setAttribute('alt','cancel icon');
-  //List of the languages buttons//
-  let languages = document.createElement('ul');
-  languages.classList.add('languages') ////****check the class name */
-    for (let languagesButtons of cardnumber.technologies) {
-      let itemList = document.createElement('li');
-      let aimg = document.createElement('a');
-      itemList.appendChild(aimg);
-      aimg.setAttribute('href','#');
-      aimg.textContent = languagesButtons;
-      fragment.appendChild(itemList);
-    }
-    languages.appendChild(fragment);
-  let details = document.createElement('div');
+  link.setAttribute('href', '#');
+  const imgPopup = document.createElement('img');
+  imgPopup.setAttribute('src', 'images/cancel.svg');
+  imgPopup.setAttribute('alt', 'cancel icon');
+  //List of the languages buttons// 
+  const languages = document.createElement('ul');
+  languages.classList.add('languages');
+  for (const languagesButtons of cardnumber.technologies) {
+    const itemList = document.createElement('li');
+    const aimg = document.createElement('a');
+    itemList.appendChild(aimg);
+    aimg.setAttribute('href', '#');
+    aimg.textContent = languagesButtons;
+    fragment.appendChild(itemList);
+  }
+  languages.appendChild(fragment);
+  const details = document.createElement('div');
   details.classList.toggle('popup_details');
-  //Container for the image//
-  let imgCont = document.createElement('div');
+  //Container for the image// 
+  const imgCont = document.createElement('div');
   imgCont.classList.toggle('img');
-  let image = document.createElement('img');
-  image.setAttribute('src', cardnumber.image);  ////image////
-  image.setAttribute('alt','Multi post image');
-  //container for the description area//
-  let info = document.createElement('div');
+  const image = document.createElement('img');
+  image.setAttribute('src', cardnumber.image);
+  image.setAttribute('alt', 'Multi post image');
+  //container for the description area//  
+  const info = document.createElement('div');
   info.classList.toggle('popup_info');
-  let descript = document.createElement('p');
+  const descript = document.createElement('p');
   descript.textContent = cardnumber.description;
-  let access = document.createElement('ul');
+  const access = document.createElement('ul');
   access.classList.toggle('access_info');
-  //Last list//
-  let liOne = document.createElement('li');
-  let linkOne = document.createElement('a');
+  //Last list// 
+  const liOne = document.createElement('li');
+  const linkOne = document.createElement('a');
   linkOne.classList.add('access_button');
-  linkOne.setAttribute('href','#');
+  linkOne.setAttribute('href', '#');
   linkOne.textContent = cardnumber.liveVersion;
-  let imgIcon = document.createElement('img');
+  const imgIcon = document.createElement('img');
   imgIcon.setAttribute('src', 'images/Export.svg');
-  imgIcon.setAttribute('alt','export icon');
-  let liTwo = document.createElement('li');
-  let linkTwo = document.createElement('a');
+  imgIcon.setAttribute('alt', 'export icon');
+  const liTwo = document.createElement('li');
+  const linkTwo = document.createElement('a');
   linkTwo.classList.add('access_button');
-  linkTwo.setAttribute('href','#');
+  linkTwo.setAttribute('href', '#');
   linkTwo.textContent = cardnumber.source;
-  let imgIconTwo = document.createElement('img');
+  const imgIconTwo = document.createElement('img');
   imgIconTwo.setAttribute('src', 'images/Group.svg');
-  imgIconTwo.setAttribute('alt','github icon');
-  //Tags identation//
-  const work = document.querySelector('.work')
+  imgIconTwo.setAttribute('alt', 'github icon');
+  //Tags identation// 
+  const work = document.querySelector('.work');
   container.appendChild(popup);
   popup.appendChild(popupDesk);
   popupDesk.appendChild(title);
@@ -117,8 +117,8 @@ function createPopup(cardnumber) {
   info.appendChild(descript);
   info.appendChild(access);
   access.appendChild(liOne);
-  liOne.appendChild(linkOne)
-  linkOne.appendChild(imgIcon)
+  liOne.appendChild(linkOne);
+  linkOne.appendChild(imgIcon);
   access.appendChild(liTwo);
   liTwo.appendChild(linkTwo);
   linkTwo.appendChild(imgIconTwo);
@@ -132,30 +132,9 @@ const closePopup = document.querySelector('.closePopup');
 const popupContainer = document.querySelector('.popup_container');
 
 popupWindow.addEventListener('click', () => {
-  popupContainer.classList.toggle('appear')
-})
+  popupContainer.classList.toggle('appear');
+});
 
 closePopup.addEventListener('click', () => {
-  popupContainer.classList.remove('appear')
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  popupContainer.classList.remove('appear');
+});
