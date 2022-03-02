@@ -181,3 +181,6 @@ for (let i = 0; i < popupWindow.length; i += 1) {
 closePopup.addEventListener('click', () => {
   popupContainer.classList.remove('appear');
 });
+
+const form = document.getElementByClass('form');
+const emailForm = form[email];
