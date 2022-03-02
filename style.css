@@ -613,7 +613,7 @@
   border: 1px solid #777;
 }
 
-.popup_details{
+.popup_details {
   overflow: auto;
 }
 
@@ -762,12 +762,10 @@
     display: flex;
     padding: 24px;
     justify-content: center;
-    /* flex-shrink: 1; */
   }
 
   .img {
     flex-basis: 659px;
-    /* flex-shrink: 1; */
   }
 
   .popup_info {
@@ -776,7 +774,6 @@
     justify-content: space-between;
     padding: 0;
     flex-basis: 336px;
-    /* flex-shrink: 1; */
     margin-left: 25px;
   }
 
