@@ -123,13 +123,15 @@ function createPopup(cardnumber) {
 
 createPopup(cardOne);
 
-const popupWindow = document.querySelector('#access_popup');
+const popupWindow = document.getElementsByClassName('access_button');
 const closePopup = document.querySelector('.closePopup');
 const popupContainer = document.querySelector('.popup_container');
 
-popupWindow.addEventListener('click', () => {
+for(let i=0; i < popupWindow.length; i++){
+  popupWindow[i].addEventListener('click', () => {
   popupContainer.classList.toggle('appear');
 });
+}
 
 closePopup.addEventListener('click', () => {
   popupContainer.classList.remove('appear');
