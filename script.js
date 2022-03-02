@@ -127,10 +127,10 @@ const popupWindow = document.getElementsByClassName('access_button');
 const closePopup = document.querySelector('.closePopup');
 const popupContainer = document.querySelector('.popup_container');
 
-for(let i=0; i < popupWindow.length; i++){
-  popupWindow[i].addEventListener('click', () => {
-  popupContainer.classList.toggle('appear');
-});
+for (let i = 0; i < popupWindow.length; i += 1) {
+    popupWindow[i].addEventListener('click', () => {
+    popupContainer.classList.toggle('appear');
+  });
 }
 
 closePopup.addEventListener('click', () => {
