@@ -35,30 +35,29 @@ const cardOne = {
 };
 
 function createPopup(cardnumber) {
-  //use the documentFragment method for the lists//
-  
+  // use the documentFragment method for the lists //
   const fragment = document.createDocumentFragment();
-  //1st part: adding classes and content//  
-  //Container to keep all the tags for the popup window// 
+  // 1st part: adding classes and content //  
+  // Container to keep all the tags for the popup window //
   const container = document.createElement('section');
   container.classList.toggle('popup_container');
   const popup = document.createElement('div');
   popup.classList.toggle('popup');
-  //Title for the desktop & Mobile version//  
+  // Title for the desktop & Mobile version //
   const popupDesk = document.createElement('div');
   popupDesk.classList.toggle('popup_desktop');
   const title = document.createElement('h2');
   title.textContent = cardnumber.name[0];
   const titledesk = document.createElement('h3');
   titledesk.textContent = cardnumber.name[1];
-  //Close icon//  
+  // Close icon //
   const link = document.createElement('a');
   link.classList.add('closePopup');
   link.setAttribute('href', '#');
   const imgPopup = document.createElement('img');
   imgPopup.setAttribute('src', 'images/cancel.svg');
   imgPopup.setAttribute('alt', 'cancel icon');
-  //List of the languages buttons// 
+  // List of the languages buttons //
   const languages = document.createElement('ul');
   languages.classList.add('languages');
   for (const languagesButtons of cardnumber.technologies) {
@@ -72,20 +71,20 @@ function createPopup(cardnumber) {
   languages.appendChild(fragment);
   const details = document.createElement('div');
   details.classList.toggle('popup_details');
-  //Container for the image// 
+  // Container for the image //
   const imgCont = document.createElement('div');
   imgCont.classList.toggle('img');
   const image = document.createElement('img');
   image.setAttribute('src', cardnumber.image);
   image.setAttribute('alt', 'Multi post image');
-  //container for the description area//  
+  // container for the description area //
   const info = document.createElement('div');
   info.classList.toggle('popup_info');
   const descript = document.createElement('p');
   descript.textContent = cardnumber.description;
   const access = document.createElement('ul');
   access.classList.toggle('access_info');
-  //Last list// 
+  // Last list //
   const liOne = document.createElement('li');
   const linkOne = document.createElement('a');
   linkOne.classList.add('access_button');
@@ -102,7 +101,7 @@ function createPopup(cardnumber) {
   const imgIconTwo = document.createElement('img');
   imgIconTwo.setAttribute('src', 'images/Group.svg');
   imgIconTwo.setAttribute('alt', 'github icon');
-  //Tags identation// 
+  // Tags identation //
   const work = document.querySelector('.work');
   container.appendChild(popup);
   popup.appendChild(popupDesk);
