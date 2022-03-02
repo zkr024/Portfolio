@@ -35,7 +35,8 @@ const cardOne = {
 };
 
 function createPopup(cardnumber) {
-  //use the documentFragment method for the lists// 
+  //use the documentFragment method for the lists//
+  
   const fragment = document.createDocumentFragment();
   //1st part: adding classes and content//  
   //Container to keep all the tags for the popup window// 
