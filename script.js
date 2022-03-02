@@ -128,7 +128,7 @@ const closePopup = document.querySelector('.closePopup');
 const popupContainer = document.querySelector('.popup_container');
 
 for (let i = 0; i < popupWindow.length; i += 1) {
-    popupWindow[i].addEventListener('click', () => {
+  popupWindow[i].addEventListener('click', () => {
     popupContainer.classList.toggle('appear');
   });
 }
