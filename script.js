@@ -59,7 +59,7 @@ function createPopup(cardnumber) {
   // List of the languages buttons //
   const languages = document.createElement('ul');
   languages.classList.add('languages');
-  cardnumber.technologies.forEach(element => {
+  cardnumber.technologies.forEach((element) => {
     const itemList = document.createElement('li');
     itemList.classList.add('lang_li');
     itemList.textContent = element;
