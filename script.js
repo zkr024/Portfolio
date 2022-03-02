@@ -25,7 +25,7 @@ closeMenuThree.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
-const cardOne = {
+const cardOne = [{
   name: 'Multi Post Stories',
   nameTwo: 'Keeping track of hundreds  of components website',
   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
@@ -33,7 +33,7 @@ const cardOne = {
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   liveVersion: 'see live',
   source: 'see source',
-};
+}];
 
 function createPopup(cardnumber) {
   // 1st part: adding classes and content //
@@ -121,7 +121,7 @@ function createPopup(cardnumber) {
   work.appendChild(container);
 }
 
-createPopup(cardOne);
+createPopup(cardOne[0]);
 
 const popupWindow = document.getElementsByClassName('access_button');
 const closePopup = document.querySelector('.closePopup');

@@ -413,7 +413,7 @@
   height: 48px;
   margin: 0 227px 0 24px;
   padding: 12px;
-  background: #823803;
+  background: #f55800;
   outline: 1px solid #ff6b00;
   text-decoration: none;
   text-align: center;
@@ -579,12 +579,9 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  flex-basis: 1156px;
-  flex-shrink: 1;
-  min-width: 343px;
-  max-width: 1155px;
   margin: 24px;
   padding: 16px;
+  max-width: 1156px;
 }
 
 .popup_desktop h3 {
@@ -616,12 +613,17 @@
   border: 1px solid #777;
 }
 
+.popup_details{
+  overflow: auto;
+}
+
 .img {
   min-width: 311px;
   max-width: 659px;
   min-height: 220px;
   max-height: 448px;
   margin: 0;
+  flex-shrink: 2;
 }
 
 .img:hover {
@@ -760,11 +762,12 @@
     display: flex;
     padding: 24px;
     justify-content: center;
+    /* flex-shrink: 1; */
   }
 
   .img {
     flex-basis: 659px;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
   }
 
   .popup_info {
@@ -773,7 +776,7 @@
     justify-content: space-between;
     padding: 0;
     flex-basis: 336px;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
     margin-left: 25px;
   }
 
