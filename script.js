@@ -183,4 +183,14 @@ closePopup.addEventListener('click', () => {
 });
 
 const form = document.getElementByClass('form');
-const emailForm = form[email];
+const emailForm = form['email'];
+
+const smTxt = document.getElementByClass('smText');
+
+function showTxt() {
+  smtxt[0].innerHTML = 'the email needs to be lower case'
+}
+
+function checkLowerCase() {
+  return !/[A-Z]/.test(str);
+}
