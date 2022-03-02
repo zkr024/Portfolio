@@ -582,6 +582,7 @@
   margin: 24px;
   padding: 16px;
   max-width: 1156px;
+  overflow: auto;
 }
 
 .popup_desktop h3 {
@@ -611,10 +612,6 @@
 .lang_li {
   padding: 10px 12px;
   border: 1px solid #777;
-}
-
-.popup_details {
-  overflow: auto;
 }
 
 .img {
