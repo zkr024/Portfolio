@@ -25,36 +25,31 @@ closeMenuThree.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
 });
 
-
-const cardOne = {name:['Multi Post Stories','Keeping track of hundreds  of components website'],
-              technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-              image: 'images/SnapshootPortfolio.png',
-              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-              liveVersion:'see live',
-              source: 'see source'
+const cardOne = { 
+  name: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
+  technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+  image: 'images/SnapshootPortfolio.png',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+  liveVersion: 'see live',
+  source: 'see source'
 };
 
-function createPopup (cardnumber){
-
+function createPopup(cardnumber) {
   //use the documentFragment method for the lists//
   const fragment = document.createDocumentFragment();
-
   //1st part: adding classes and content//
   //Container to keep all the tags for the popup window//
-  let container = document.createElement('section');
+  const container = document.createElement('section');
   container.classList.toggle('popup_container');
-  
-  let popup = document.createElement('div');
+  const popup = document.createElement('div');
   popup.classList.toggle('popup');
-  
   //Title for the desktop & Mobile version//
-  let popupDesk = document.createElement('div');
+  const popupDesk = document.createElement('div');
   popupDesk.classList.toggle('popup_desktop');
-  let title = document.createElement('h2');
+  const title = document.createElement('h2');
   title.textContent = cardnumber.name[0];
-  let titledesk = document.createElement('h3'); 
+  const titledesk = document.createElement('h3'); 
   titledesk.textContent = cardnumber.name[1];
-  
   //Close icon//
   let link = document.createElement('a');
   link.classList.add('closePopup');
@@ -62,7 +57,6 @@ function createPopup (cardnumber){
   let imgPopup = document.createElement('img');
   imgPopup.setAttribute('src','images/cancel.svg');
   imgPopup.setAttribute('alt','cancel icon');
-  
   //List of the languages buttons//
   let languages = document.createElement('ul');
   languages.classList.add('languages') ////****check the class name */
@@ -75,28 +69,22 @@ function createPopup (cardnumber){
       fragment.appendChild(itemList);
     }
     languages.appendChild(fragment);
-    
   let details = document.createElement('div');
   details.classList.toggle('popup_details');
-  
   //Container for the image//
   let imgCont = document.createElement('div');
   imgCont.classList.toggle('img');
   let image = document.createElement('img');
   image.setAttribute('src', cardnumber.image);  ////image////
   image.setAttribute('alt','Multi post image');
-  
   //container for the description area//
   let info = document.createElement('div');
   info.classList.toggle('popup_info');
-  
   let descript = document.createElement('p');
   descript.textContent = cardnumber.description;
   let access = document.createElement('ul');
   access.classList.toggle('access_info');
-
   //Last list//
-  
   let liOne = document.createElement('li');
   let linkOne = document.createElement('a');
   linkOne.classList.add('access_button');
@@ -113,7 +101,6 @@ function createPopup (cardnumber){
   let imgIconTwo = document.createElement('img');
   imgIconTwo.setAttribute('src', 'images/Group.svg');
   imgIconTwo.setAttribute('alt','github icon');
-   
   //Tags identation//
   const work = document.querySelector('.work')
   container.appendChild(popup);
@@ -135,14 +122,10 @@ function createPopup (cardnumber){
   access.appendChild(liTwo);
   liTwo.appendChild(linkTwo);
   linkTwo.appendChild(imgIconTwo);
-   
   work.appendChild(container);
 }
 
 createPopup(cardOne);
-
-
-
 
 const popupWindow = document.querySelector('#access_popup');
 const closePopup = document.querySelector('.closePopup');

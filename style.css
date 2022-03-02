@@ -385,6 +385,12 @@
   padding: 24px 0 15px 16px;
 }
 
+.access_info li a {
+  display: flex;
+  margin: 16px 19px 4px 0;
+  width: fit-content;
+}
+
 .languages a:hover {
   border: 1px solid #ff6b00;
   color: #ff6b00;
@@ -547,7 +553,7 @@
 
 /* popup window */
 
-.popup_container{
+.popup_container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -561,7 +567,7 @@
   backdrop-filter: blur(5px);
   transition-property: opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 300ms;  
+  transition-duration: 300ms;
 }
 
 .appear {
@@ -581,7 +587,7 @@
   padding: 16px;
 }
 
-.popup_desktop h3{
+.popup_desktop h3 {
   display: none;
 }
 
@@ -599,9 +605,9 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-} 
+}
 
-.popup ul{
+.popup ul {
   margin: 0 0 24px 0;
 }
 
@@ -638,12 +644,6 @@
   margin: 0;
   list-style: none;
   display: flex;
-}
-
-.access_info li a {
-  display: flex;
-  margin: 16px 19px 4px 0;
-  width: fit-content;
 }
 
 @media (min-width: 774px) {
@@ -732,10 +732,11 @@
   .popup_desktop h2 {
     display: none;
   }
+
   .popup_desktop {
     margin: 24px 38px 12px 24px;
-  } 
-    
+  }
+
   .popup_desktop h3 {
     display: block;
     font-family: 'Crete Round', serif;
@@ -745,18 +746,22 @@
     line-height: 44px;
     color: #172b4d;
   }
+
   .popup .languages {
     margin: 0 0 16px 24px;
   }
+
   .popup_details {
     display: flex;
     padding: 24px;
     justify-content: center;
   }
+
   .img {
     flex-basis: 659px;
     flex-shrink: 1;
   }
+
   .popup_info {
     display: flex;
     flex-direction: column;
@@ -766,9 +771,11 @@
     flex-shrink: 1;
     margin-left: 25px;
   }
+
   .popup_info p {
     margin: 0;
   }
+
   .popup_info .access_info {
     margin: 0;
   }
@@ -1019,18 +1026,6 @@ input:focus {
 .bottom .media {
   margin: 0;
 }
-
-/* POPUP WINDOW */
-/* .blur{ */
-  /* background: #66666666; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* top: 0; */
-  /* left: 0; */
-  /* backdrop-filter: blur(5px); */
-  /* position: fixed; */
-  /* display: block; */
-/* } */
 
 @media (min-width: 780px) {
   .form {
