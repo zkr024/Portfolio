@@ -608,7 +608,12 @@
 }
 
 .popup ul {
-  margin: 0 0 24px 0;
+  margin: 0 0 24px 0px;
+}
+
+.lang_li {
+  padding: 10px 12px;
+  border: 1px solid #777 ;
 }
 
 .img {

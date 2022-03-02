@@ -36,8 +36,6 @@ const cardOne = {
 };
 
 function createPopup(cardnumber) {
-  // use the documentFragment method for the lists //
-  const fragment = document.createDocumentFragment();
   // 1st part: adding classes and content //
   // Container to keep all the tags for the popup window //
   const container = document.createElement('section');
@@ -61,15 +59,12 @@ function createPopup(cardnumber) {
   // List of the languages buttons //
   const languages = document.createElement('ul');
   languages.classList.add('languages');
-  for (const languagesButtons of cardnumber.technologies) {
+  cardnumber.technologies.forEach(element => {
     const itemList = document.createElement('li');
-    const aimg = document.createElement('a');
-    itemList.appendChild(aimg);
-    aimg.setAttribute('href', '#');
-    aimg.textContent = languagesButtons;
-    fragment.appendChild(itemList);
-  }
-  languages.appendChild(fragment);
+    itemList.classList.add('lang_li');
+    itemList.textContent = element;
+    languages.appendChild(itemList);
+  });
   const details = document.createElement('div');
   details.classList.toggle('popup_details');
   // Container for the image //
