@@ -189,19 +189,19 @@ const smTxt = document.getElementById('smText');
 
 // variables for the desktop form //
 const desktopForm = document.getElementById('desktop-form');
-const emailDesktop= document.getElementById('email');
+const emailDesktop = document.getElementById('email');
 const smTxtDeskTop = document.getElementById('smText-desktop');
 
 const warning = 'Unable to send the form, please use only lowercase letters for the email.';
 
 // Function for the error - Mobile form //
 mobileForm.addEventListener('submit', (e) => {
-  if(/[A-Z]/.test(emailForm.value)){
+  if (/[A-Z]/.test(emailForm.value)) {
     e.preventDefault();
     smTxt.textContent = warning;
     smTxt.classList.add('error');
     setTimeout(() => {
-      smTxt.textContent = "";
+      smTxt.textContent = '';
       smTxt.classList.remove('error');
     }, 3000);
   }
@@ -209,12 +209,12 @@ mobileForm.addEventListener('submit', (e) => {
 
 // Function for the error - desktop form //
 desktopForm.addEventListener('submit', (e) => {
-  if(/[A-Z]/.test(emailDesktop.value)){
+  if (/[A-Z]/.test(emailDesktop.value)) {
     e.preventDefault();
     smTxtDeskTop.textContent = warning;
     smTxtDeskTop.classList.add('error');
     setTimeout(() => {
-      smTxtDeskTop.textContent = "";
+      smTxtDeskTop.textContent = '';
       smTxtDeskTop.classList.remove('error');
     }, 3000);
   }
