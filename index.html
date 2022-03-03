@@ -37,7 +37,7 @@
             <div class="presentation">
                 <h1 class="title">Hey There. I'm Oscar</h1>
                 <h2 class="profession">I’am a Software Developer</h2>
-                <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
                 don’t hestiate to contact me.</p>
             </div>
             <ul class="media front">
@@ -172,29 +172,32 @@
                         <li>Gitlab</li>
                         <li>Terminal</li>
                     </ul></li>
-                </ul>    
-        </section> 
+                </ul>
+        </section>
         <section id="contact" class="form">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form class="mobile-form" action="https://formspree.io/f/xgedkodo" method="post">
+            <form class="mobile-form" id="mobile-form" action="https://formspree.io/f/xgedkodo" method="post">
                 <label for="name">Name</label>
                 <input type="text" maxlength="30" required="" placeholder="Full name" name="name" id="name">
                 <label for="email-address">Email</label>
                 <input type="email" required="" placeholder="Email address" name="email" id="email-address">
                 <label for="text">Text</label>
                 <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea" id="text"></textarea>
+                <small id="smText"></small>
                 <input type="submit" value="Get in touch" class="submit">
             </form>
-            <form class="desktop-form" action="https://formspree.io/f/xgedkodo" method="post">
+            <form class="desktop-form" id="desktop-form" action="https://formspree.io/f/xgedkodo" method="post">
                 <label for="fname">Name</label>
                 <input type="text" maxlength="30" required="" placeholder="First Name" name="fname" class="first-name" id="fname">
                 <label for="lname">Last name</label>
                 <input type="text" maxlength="30" required="" placeholder="Last Name" name="lname" class="last-name" id="lname">
                 <label for="email">Email</label>
                 <input type="email" required="" placeholder="Email address" name="email" class="email" id="email">
+                <small class="smText"></small>
                 <label for="textarea">Text</label>
                 <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea" id="textarea"></textarea>
-                <input type="submit" value="Get in touch" class="submit">                
+                <small id="smText-desktop"></small>
+                <input type="submit" value="Get in touch" class="submit">
             </form>
         </section>
         <footer>
@@ -207,7 +210,7 @@
                     <li><a href="#"><img src="images/darkm.svg" alt="m icon"></a></li>
                 </ul>
             </div>
-        </footer>   
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
