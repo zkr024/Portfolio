@@ -176,17 +176,17 @@
         </section>
         <section id="contact" class="form">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form class="mobile-form" action="https://formspree.io/f/xgedkodo" method="post">
+            <form class="mobile-form" id="mobile-form" action="https://formspree.io/f/xgedkodo" method="post">
                 <label for="name">Name</label>
                 <input type="text" maxlength="30" required="" placeholder="Full name" name="name" id="name">
                 <label for="email-address">Email</label>
                 <input type="email" required="" placeholder="Email address" name="email" id="email-address">
-                <small class="smText"></small>
                 <label for="text">Text</label>
                 <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea" id="text"></textarea>
+                <small id="smText"></small>
                 <input type="submit" value="Get in touch" class="submit">
             </form>
-            <form class="desktop-form" action="https://formspree.io/f/xgedkodo" method="post">
+            <form class="desktop-form" id="desktop-form" action="https://formspree.io/f/xgedkodo" method="post">
                 <label for="fname">Name</label>
                 <input type="text" maxlength="30" required="" placeholder="First Name" name="fname" class="first-name" id="fname">
                 <label for="lname">Last name</label>
@@ -196,6 +196,7 @@
                 <small class="smText"></small>
                 <label for="textarea">Text</label>
                 <textarea maxlength="500" required="" placeholder="Enter text here" name="textarea" id="textarea"></textarea>
+                <small id="smText-desktop"></small>
                 <input type="submit" value="Get in touch" class="submit">
             </form>
         </section>

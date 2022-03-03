@@ -182,15 +182,40 @@ closePopup.addEventListener('click', () => {
   popupContainer.classList.remove('appear');
 });
 
-const form = document.getElementByClass('form');
-const emailForm = form['email'];
+// variables for the mobile form //
+const mobileForm = document.getElementById('mobile-form');
+const emailForm = document.getElementById('email-address');
+const smTxt = document.getElementById('smText');
 
-const smTxt = document.getElementByClass('smText');
+// variables for the desktop form //
+const desktopForm = document.getElementById('desktop-form');
+const emailDesktop= document.getElementById('email');
+const smTxtDeskTop = document.getElementById('smText-desktop');
 
-function showTxt() {
-  smtxt[0].innerHTML = 'the email needs to be lower case'
-}
+const warning = 'Unable to send the form, please use only lowercase letters for the email.';
 
-function checkLowerCase() {
-  return !/[A-Z]/.test(str);
-}
+// Function for the error - Mobile form //
+mobileForm.addEventListener('submit', (e) => {
+  if(/[A-Z]/.test(emailForm.value)){
+    e.preventDefault();
+    smTxt.textContent = warning;
+    smTxt.classList.add('error');
+    setTimeout(() => {
+      smTxt.textContent = "";
+      smTxt.classList.remove('error');
+    }, 3000);
+  }
+});
+
+// Function for the error - desktop form //
+desktopForm.addEventListener('submit', (e) => {
+  if(/[A-Z]/.test(emailDesktop.value)){
+    e.preventDefault();
+    smTxtDeskTop.textContent = warning;
+    smTxtDeskTop.classList.add('error');
+    setTimeout(() => {
+      smTxtDeskTop.textContent = "";
+      smTxtDeskTop.classList.remove('error');
+    }, 3000);
+  }
+});
