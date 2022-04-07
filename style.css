@@ -514,10 +514,17 @@
   margin: 0 24px;
 }
 
-/* .second_card:hover { */
-  /* transform: scale(1.03); */
-  /* transition-duration: 250ms; */
-/* } */
+.first {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/capstone.png");
+}
+
+.second {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/toDoList.png");
+}
+
+.third {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/awesome.png");
+}
 
 .second_card h4 {
   display: none;
@@ -684,7 +691,6 @@
     display: none;
   }
 
-  .second,
   .fifth {
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/secondback.png");
   }
@@ -719,9 +725,8 @@
     margin: 24px 16px 0 16px;
     width: 337px;
     height: 81px;
-}
+  }
 
-  .third,
   .sixth {
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/thirdback.png");
   }
@@ -1066,10 +1071,6 @@ input:focus {
     justify-content: center;
   }
 
-  .mobile-form {
-    display: none;
-  }
-
   .form h2 {
     font-size: 40px;
     line-height: 52px;
@@ -1080,50 +1081,14 @@ input:focus {
     margin: 130px 24px 228px 135px;
   }
 
-  .desktop-form {
+  .mobile-form {
     flex-basis: 684px;
     display: grid;
-    grid-template: repeat(5, auto)/auto;
+    grid-template: repeat(4, auto)/auto;
     margin-top: 130px;
   }
 
   .submit {
     margin: 24px 0 124px 0;
-  }
-}
-
-@media (min-width: 950px) {
-  .desktop-form {
-    grid-template: repeat(4, auto)/auto auto;
-    gap: 24px;
-    margin-right: 24px;
-  }
-
-  .first-name {
-    grid-area: 1/1/2/2;
-    margin: 0;
-  }
-
-  .last-name {
-    grid-area: 1/2/2/3;
-    margin: 0;
-  }
-
-  .email {
-    grid-area: 2/1/3/3;
-    margin: 0;
-  }
-
-  textarea {
-    grid-area: 3/1/4/3;
-  }
-
-  .error {
-    grid-area: 4/1/5/2;
-  }
-
-  .submit {
-    margin-top: 0;
-    border: none;
   }
 }
