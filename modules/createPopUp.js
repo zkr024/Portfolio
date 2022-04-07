@@ -1,7 +1,7 @@
-import { work } from './variables.js'
+import { work } from './variables.js';
 
 function createPopUp(cardNumber) {
-    work.innerHTML += `
+  work.innerHTML += `
     <section class="popup_container">
         <div class="popup">
             <div class="popup_desktop">
@@ -38,7 +38,7 @@ function createPopUp(cardNumber) {
             </div>
         </div>
     </section>
-    `
+    `;
 }
 
 export default createPopUp;

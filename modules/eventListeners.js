@@ -1,11 +1,10 @@
 // Mobile menu //
-import { 
-  menu, closeButton, closeMenu, closeMenuTwo, closeMenuThree, mobileForm, burgerMenu, emailForm, smTxt, work, popupWindow
-} from './variables.js'
+import {
+  menu, closeButton, closeMenu, closeMenuTwo, closeMenuThree, mobileForm, burgerMenu, emailForm, smTxt, work, popupWindow,
+} from './variables.js';
 
-import createPopUp from './createPopUp.js'
-import cardOne from './popUpArray.js'
-
+import createPopUp from './createPopUp.js';
+import cardOne from './popUpArray.js';
 
 export const openMenu = menu.addEventListener('click', () => {
   burgerMenu.classList.toggle('menu_active');
@@ -42,18 +41,18 @@ export const formError = mobileForm.addEventListener('submit', (e) => {
 
 // Open & close pop-up //
 
-export const openPopUp = work.addEventListener('click', (e) =>{
+export const openPopUp = work.addEventListener('click', (e) => {
   for (let i = 0; i < popupWindow.length; i += 1) {
-    if (e.target.classList.contains(i)){
+    if (e.target.classList.contains(i)) {
       createPopUp(cardOne[i]);
       const popupContainer = document.querySelector('.popup_container');
       popupContainer.classList.add('appear');
     }
   }
-})
+});
 
 work.addEventListener('click', (e) => {
-  if(e.target.classList.contains('closing')) {
+  if (e.target.classList.contains('closing')) {
     const popupContainer = document.querySelector('.popup_container');
     work.removeChild(popupContainer);
   }

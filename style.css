@@ -116,7 +116,7 @@
   }
 
   .nav li a:hover {
-    color:#e05304;
+    color: #e05304;
   }
 
   .envelope:hover {
@@ -452,7 +452,7 @@
 }
 
 .access_button:active,
-.submit:active
+.submit:active,
 .resume:active {
   background: #e05304;
   color: #f4f1f0;
